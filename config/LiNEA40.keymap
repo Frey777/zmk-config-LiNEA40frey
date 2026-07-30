@@ -9,10 +9,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
-#define SCROLL 5
-#define NUM 2
-
-#define MOUSE 4
 #define MARK 7
 #define CURSOR 6
 #define FUNCTION 7
