@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,
+            //スクロール方向を逆転,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -156,19 +156,19 @@
 
         Num {
             bindings = <
-&kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans     &trans        &trans        &trans        &trans  &trans    &trans  &trans          &trans  &trans  &trans
+&kp EQUAL              &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(APOS)                         &kp DOT    &kp ASTRK  &kp N7  &kp N8    &kp N9
+&kp LEFT_PARENTHESIS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS                            &kp FSLH   &kp MINUS  &kp N4  &kp N5    &kp N6
+&kp RIGHT_PARENTHESIS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(SEMI)                         &kp EQUAL  &kp PLUS   &kp N1  &kp N2    &kp N3
+&trans                 &kp N0        &kp FSLH      &trans        &lt 7 SPACE   &trans    &lt 7 SPACE  &trans                &kp N0  &kp PLUS  &kp EQUAL
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mo 5   &mkp MB2  &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans  &trans    &trans
             >;
         };
 
@@ -185,10 +185,10 @@
 
         CURSOR {
             bindings = <
-&trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-&trans    &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                       &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
-&kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                       &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&trans    &trans                  &trans        &trans                   &trans  &trans    &kp ENTER  &kp NUMBER_0                   &kp DOT       &kp ENTER     &kp QUESTION
+&kp N1              &kp N2              &kp N3               &kp N4               &kp N5                            &kp N6        &kp N7     &kp N8        &kp N9         &kp N0
+&trans              &kp LA(LEFT_ARROW)  &kp UP_ARROW         &kp LA(RIGHT_ARROW)  &trans                            &kp MINUS     &kp EQUAL  &kp LBKT      &kp RBKT       &kp BSLH
+&kp LSHFT           &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW      &trans                            &kp MINUS     &kp EQUAL  &kp NUMBER_2  &kp NUMBER_3   &kp LS(BSLH)
+&kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)   &trans  &lt 7 ENTER    &kp ENTER  &kp NUMBER_0             &kp DOT       &kp LG(LS(S))  &kp LS(INT1)
             >;
         };
 
