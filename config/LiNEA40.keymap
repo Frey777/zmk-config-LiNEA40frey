@@ -107,6 +107,90 @@
         };
     };
 
+    macros {
+        GUID: GUID {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp H &kp U &kp N &kp DOT &kp S &kp DOT &kp O &kp K &kp U &kp N &kp O &kp LEFT_BRACKET &kp P &kp W &kp C &kp DOT &kp C &kp O &kp M>;
+            label = "GUID";
+        };
+
+        pcpass: pwcpass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp L &kp I &kp V &kp E &kp I &kp N &kp LS(J) &kp U &kp N &kp E &kp N2 &kp N4 &kp N1 &kp N9 &kp N8 &kp N7 &kp EXCL>;
+            label = "PWCPASS";
+        };
+
+        macpass: macpass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp L &kp T &kp E &kp R &kp N &kp A &kp T &kp I &kp V &kp E>;
+            label = "MACPASS";
+        };
+
+        onepassword: onepassword {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp L &kp I &kp V &kp E &kp I &kp N &kp LS(J) &kp A &kp P &kp A &kp N &kp N7 &kp EXCL>;
+            label = "ONEPASSWORD";
+        };
+
+        toMac: toMacStudio {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 1>;
+
+            label = "TOMACSTUDIO";
+        };
+
+        toWin: toiPad13 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 0>;
+
+            label = "TOIPAD13";
+        };
+
+        toiPad13: toiPad11 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 1>;
+
+            label = "TOIPAD11";
+        };
+
+        toiPadmini: toiPhone {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 1>;
+
+            label = "TOIPHONE";
+        };
+
+        JRAticketSmartsheet2: JTAticketSmartsheet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp LEFT_SHIFT &kp ENTER &kp TAB &kp TAB &kp ENTER>;
+            label = "JTATICKETSMARTSHEET";
+        };
+
+        JRAticketSmartsheet1: JRAticketSmartsheet1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp LEFT_SHIFT &kp ENTER &kp TAB &kp ENTER>;
+            label = "JRATICKETSMARTSHEET1";
+        };
+
+        toandroid: toandroid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 2>;
+
+            label = "TOANDROID";
+        };
+    };
+
     behaviors {
         re_kp: sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
