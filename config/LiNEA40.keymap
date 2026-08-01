@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -242,7 +242,7 @@
 &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 9 SPACE  &lt 3 ENTER    &kp BACKSPACE  &mt RIGHT_SHIFT LANG1         &kp LEFT_ALT  &lt 8 SLASH  &mt LEFT_COMMAND AT_SIGN
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         Num {
@@ -281,6 +281,8 @@
 &kp LSHFT           &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW      &pcpass                                           &kp LS(MINUS)          &kp LS(EQUAL)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(BSLH)
 &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)   &trans      &lt 7 ENTER    &JRAticketSmartsheet1  &JRAticketSmartsheet2                 &kp DOT         &kp LG(LS(S))    &kp LS(INT1)
             >;
+
+            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
 
         MARK {
@@ -312,6 +314,8 @@
 &kp LSHFT               &kp LEFT_ARROW        &kp DOWN_ARROW           &kp RIGHT_ARROW         &onepassword                                        &kp LS(MINUS)          &kp LS(EQUAL)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(BSLH)
 &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &kp LG(LA(RIGHT_ARROW))  &kp LG(LA(DOWN_ARROW))  &trans        &lt 7 ENTER    &JRAticketSmartsheet1  &JRAticketSmartsheet2                 &kp DOT         &kp LG(LS(N5))   &kp UNDERSCORE
             >;
+
+            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
     };
 };
