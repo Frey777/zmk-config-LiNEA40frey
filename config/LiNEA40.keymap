@@ -45,9 +45,7 @@
     };
 };
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 4 10000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 10000>; };
 
 &msc_input_listener {
     speed_up {
@@ -61,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,
+            //スクロール方向を逆転,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -216,35 +214,35 @@
 
         WIN_default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                           &kp T                                      &kp Y                 &kp U  &kp I                &kp O        &kp P
-&kp A             &kp S         &kp D         &kp F                           &kp G                                      &kp H                 &kp J  &kp K                &kp L        &kp ENTER
-&kp Z             &kp X         &kp C         &kp V                           &kp B                                      &kp N                 &kp M  &kp COMMA            &kp DOT      &kp MINUS
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INTERNATIONAL_5  &lt 6 SPACE  &lt 3 ENTER    &kp BACKSPACE  &mt RIGHT_SHIFT INT4         &lt 8 RIGHT_BRACKET  &lt 8 SLASH  &mt RIGHT_CONTROL LEFT_BRACKET
+&kp Q             &kp W         &kp E         &kp R                           &kp T                                      &kp Y                 &kp U  &kp I         &kp O        &kp P
+&kp A             &kp S         &kp D         &kp F                           &kp G                                      &kp H                 &kp J  &kp K         &kp L        &kp ENTER
+&kp Z             &kp X         &kp C         &kp V                           &kp B                                      &kp N                 &kp M  &kp COMMA     &kp DOT      &kp MINUS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INTERNATIONAL_5  &lt 6 SPACE  &lt 3 ENTER    &kp BACKSPACE  &mt RIGHT_SHIFT INT4         &kp LEFT_ALT  &lt 8 SLASH  &mt RIGHT_CONTROL LEFT_BRACKET
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
 
         MacDefault {
             bindings = <
-&kp Q             &kp W             &kp E         &kp R                 &kp T                                      &kp Y                  &kp U  &kp I                &kp O        &kp P
-&kp A             &kp S             &kp D         &kp F                 &kp G                                      &kp H                  &kp J  &kp K                &kp L        &kp ENTER
-&kp Z             &kp X             &kp C         &kp V                 &kp B                                      &kp N                  &kp M  &kp COMMA            &kp DOT      &kp MINUS
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 9 SPACE  &lt 3 ENTER    &kp BACKSPACE  &mt RIGHT_SHIFT LANG1         &lt 8 RIGHT_BRACKET  &lt 8 SLASH  &mt LEFT_COMMAND AT_SIGN
+&kp Q             &kp W             &kp E         &kp R                 &kp T                                      &kp Y                  &kp U  &kp I         &kp O        &kp P
+&kp A             &kp S             &kp D         &kp F                 &kp G                                      &kp H                  &kp J  &kp K         &kp L        &kp ENTER
+&kp Z             &kp X             &kp C         &kp V                 &kp B                                      &kp N                  &kp M  &kp COMMA     &kp DOT      &kp MINUS
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 9 SPACE  &lt 3 ENTER    &kp BACKSPACE  &mt RIGHT_SHIFT LANG1         &kp LEFT_ALT  &lt 8 SLASH  &mt LEFT_COMMAND AT_SIGN
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
 
         AndDefault {
             bindings = <
-&kp Q             &kp W             &kp E         &kp R                 &kp T                                      &kp Y                  &kp U  &kp I                &kp O        &kp P
-&kp A             &kp S             &kp D         &kp F                 &kp G                                      &kp H                  &kp J  &kp K                &kp L        &kp ENTER
-&kp Z             &kp X             &kp C         &kp V                 &kp B                                      &kp N                  &kp M  &kp COMMA            &kp DOT      &kp MINUS
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 9 SPACE  &lt 3 ENTER    &kp BACKSPACE  &mt RIGHT_SHIFT LANG1         &lt 8 RIGHT_BRACKET  &lt 8 SLASH  &mt LEFT_COMMAND AT_SIGN
+&kp Q             &kp W             &kp E         &kp R                 &kp T                                      &kp Y                  &kp U  &kp I         &kp O        &kp P
+&kp A             &kp S             &kp D         &kp F                 &kp G                                      &kp H                  &kp J  &kp K         &kp L        &kp ENTER
+&kp Z             &kp X             &kp C         &kp V                 &kp B                                      &kp N                  &kp M  &kp COMMA     &kp DOT      &kp MINUS
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 9 SPACE  &lt 3 ENTER    &kp BACKSPACE  &mt RIGHT_SHIFT LANG1         &kp LEFT_ALT  &lt 8 SLASH  &mt LEFT_COMMAND AT_SIGN
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
 
         Num {
