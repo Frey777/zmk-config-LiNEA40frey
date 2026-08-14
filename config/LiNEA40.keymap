@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -287,7 +287,7 @@
 &kp LS(N1)          &kp LS(N2)          &kp LS(N3)           &kp LS(N4)           &kp LS(N5)                                        &kp LS(N6)             &kp LS(N7)     &kp LS(N8)      &kp LS(N9)       &kp LS(N0)
 &trans              &kp LA(LEFT_ARROW)  &kp UP_ARROW         &kp LA(RIGHT_ARROW)  &GUID                                             &kp MINUS              &kp EQUAL      &kp LBKT        &kp RBKT         &kp BSLH
 &kp LSHFT           &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW      &pcpass                                           &kp LS(MINUS)          &kp LS(EQUAL)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(BSLH)
-&kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &trans      &lt 7 ENTER    &JRAticketSmartsheet1  &JRAticketSmartsheet2                 &kp DOT         &kp LG(LS(S))    &kp LS(INT1)
+&kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &trans      &lt 7 ENTER    &JRAticketSmartsheet1  &JRAticketSmartsheet2                 &onepassword    &kp LG(LS(S))    &kp LS(INT1)
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;
